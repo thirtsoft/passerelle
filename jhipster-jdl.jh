@@ -1,0 +1,31 @@
+entity Category {
+	name String
+}
+entity SubCategory {
+	name String,
+    alcohol Boolean
+}
+relationship OneToMany {
+	Category{subcategory} to
+    SubCategory{category(name)}
+}
+
+entity Product {
+	name String,
+    description String,
+    image ImageBlob,
+    price BigDecimal,
+    size Size
+}
+entity Brand {
+	brandName String
+}
+
+enum Size {
+    S, M, L, XL, XXL
+}
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Brand{product} to Product{brand(brandName)},
+    Product{subcategory} to SubCategory
+}

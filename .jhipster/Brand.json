@@ -1,0 +1,26 @@
+{
+    "name": "Brand",
+    "fields": [
+        {
+            "fieldName": "brandName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "product",
+            "otherEntityName": "product",
+            "otherEntityRelationshipName": "brand"
+        }
+    ],
+    "changelogDate": "20190120141848",
+    "entityTableName": "brand",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

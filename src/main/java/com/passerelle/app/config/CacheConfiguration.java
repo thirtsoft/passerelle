@@ -38,6 +38,13 @@ public class CacheConfiguration {
             cm.createCache(com.passerelle.app.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.passerelle.app.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.passerelle.app.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.passerelle.app.domain.Category.class.getName(), jcacheConfiguration);
+            cm.createCache(com.passerelle.app.domain.Category.class.getName() + ".subcategories", jcacheConfiguration);
+            cm.createCache(com.passerelle.app.domain.SubCategory.class.getName(), jcacheConfiguration);
+            cm.createCache(com.passerelle.app.domain.Product.class.getName(), jcacheConfiguration);
+            cm.createCache(com.passerelle.app.domain.Product.class.getName() + ".subcategories", jcacheConfiguration);
+            cm.createCache(com.passerelle.app.domain.Brand.class.getName(), jcacheConfiguration);
+            cm.createCache(com.passerelle.app.domain.Brand.class.getName() + ".products", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
