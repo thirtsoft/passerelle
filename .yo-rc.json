@@ -1,0 +1,33 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "com.passerelle.app"
+        },
+        "jhipsterVersion": "5.7.2",
+        "applicationType": "gateway",
+        "baseName": "passerelle",
+        "packageName": "com.passerelle.app",
+        "packageFolder": "com/passerelle/app",
+        "serverPort": "8082",
+        "authenticationType": "jwt",
+        "cacheProvider": "ehcache",
+        "enableHibernateCache": true,
+        "websocket": false,
+        "databaseType": "sql",
+        "devDatabaseType": "h2Disk",
+        "prodDatabaseType": "mysql",
+        "searchEngine": "elasticsearch",
+        "messageBroker": false,
+        "serviceDiscoveryType": false,
+        "buildTool": "maven",
+        "enableSwaggerCodegen": false,
+        "jwtSecretKey": "YTA3NmFhMjc5YmM3OGY3NWUzNzJiOTg5YmQzN2Q3MTZhY2FmZmZiZDlkYzViYmMxMWJlZDgyNTEyM2U3NDdjNjVmYWJkYjI1MDkwZmZiYTFjMDEyNjAzZGRjMzNlMzI1OWNmMWRmMTk3NTk5NDk0MWVhOTYwOWM3ZGZiOGQ5Yjg=",
+        "clientFramework": "angularX",
+        "useSass": true,
+        "clientPackageManager": "npm",
+        "testFrameworks": ["gatling", "protractor"],
+        "jhiPrefix": "jhi",
+        "otherModules": [],
+        "enableTranslation": false
+    }
+}
