@@ -35,7 +35,7 @@ describe('Component Tests', () => {
 
                 activated: true,
                 email: 'john.doe@mail.com',
-                langKey: 'en',
+                langKey: 'fr',
                 login: 'john'
             };
             mockAuth.setIdentityResponse(accountValues);

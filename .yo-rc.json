@@ -1,7 +1,8 @@
 {
     "generator-jhipster": {
         "promptValues": {
-            "packageName": "com.passerelle.app"
+            "packageName": "com.passerelle.app",
+            "nativeLanguage": "fr"
         },
         "jhipsterVersion": "5.7.2",
         "applicationType": "gateway",
@@ -14,20 +15,22 @@
         "enableHibernateCache": true,
         "websocket": false,
         "databaseType": "sql",
-        "devDatabaseType": "h2Disk",
+        "devDatabaseType": "mysql",
         "prodDatabaseType": "mysql",
         "searchEngine": "elasticsearch",
         "messageBroker": false,
         "serviceDiscoveryType": false,
         "buildTool": "maven",
         "enableSwaggerCodegen": false,
-        "jwtSecretKey": "YTA3NmFhMjc5YmM3OGY3NWUzNzJiOTg5YmQzN2Q3MTZhY2FmZmZiZDlkYzViYmMxMWJlZDgyNTEyM2U3NDdjNjVmYWJkYjI1MDkwZmZiYTFjMDEyNjAzZGRjMzNlMzI1OWNmMWRmMTk3NTk5NDk0MWVhOTYwOWM3ZGZiOGQ5Yjg=",
+        "jwtSecretKey": "ZTY0ODI5ZGYyNjMyMTZkY2EwZTc5YTM1NDhjY2JlMzIxOTBiYzVmZmE5YTdiNDM3Nzk5ZjJlNWE3YjFkYmVlYjhhYTgyOWMxYjdkZTQxMDI3ZGJhMzY5MTFjMzU1YzYyMWRhMWQzZTAyNTZkY2EzZDkzZDBkNjJhYjRmMWJhYzY=",
         "clientFramework": "angularX",
         "useSass": true,
         "clientPackageManager": "npm",
         "testFrameworks": ["gatling", "protractor"],
         "jhiPrefix": "jhi",
         "otherModules": [],
-        "enableTranslation": false
+        "enableTranslation": true,
+        "nativeLanguage": "fr",
+        "languages": ["fr"]
     }
 }

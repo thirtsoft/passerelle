@@ -19,7 +19,7 @@ import { PasserelleAccountModule } from './account/account.module';
 import { PasserelleEntityModule } from './entities/entity.module';
 import * as moment from 'moment';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
-import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ErrorComponent } from './layouts';
+import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
 
 @NgModule({
     imports: [
@@ -29,7 +29,9 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
         NgJhipsterModule.forRoot({
             // set below to true to make alerts look like toast
             alertAsToast: false,
-            alertTimeout: 5000
+            alertTimeout: 5000,
+            i18nEnabled: true,
+            defaultI18nLang: 'fr'
         }),
         PasserelleSharedModule.forRoot(),
         PasserelleCoreModule,
@@ -38,7 +40,7 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
         // jhipster-needle-angular-add-module JHipster will add new module here
         PasserelleEntityModule
     ],
-    declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent],
+    declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
     providers: [
         {
             provide: HTTP_INTERCEPTORS,

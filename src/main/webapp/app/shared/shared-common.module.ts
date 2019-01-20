@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 
-import { PasserelleSharedLibsModule, JhiAlertComponent, JhiAlertErrorComponent } from './';
+import { PasserelleSharedLibsModule, FindLanguageFromKeyPipe, JhiAlertComponent, JhiAlertErrorComponent } from './';
 
 @NgModule({
     imports: [PasserelleSharedLibsModule],
-    declarations: [JhiAlertComponent, JhiAlertErrorComponent],
-    exports: [PasserelleSharedLibsModule, JhiAlertComponent, JhiAlertErrorComponent]
+    declarations: [FindLanguageFromKeyPipe, JhiAlertComponent, JhiAlertErrorComponent],
+    exports: [PasserelleSharedLibsModule, FindLanguageFromKeyPipe, JhiAlertComponent, JhiAlertErrorComponent]
 })
 export class PasserelleSharedCommonModule {}

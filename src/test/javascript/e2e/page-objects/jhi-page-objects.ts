@@ -169,7 +169,7 @@ export class PasswordPage {
     }
 
     async getTitle() {
-        return this.title.getText();
+        return this.title.getAttribute('jhiTranslate');
     }
 
     async save() {
@@ -221,7 +221,7 @@ export class SettingsPage {
     }
 
     async getTitle() {
-        return this.title.getText();
+        return this.title.getAttribute('jhiTranslate');
     }
 
     async save() {
